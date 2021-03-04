@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  background: #eae3c8;
+  font-size: 18px;
+  transition: 0.2s;
+}
+
+ul li:hover {
+  background: #c2b092;
+}
+
+ul .done {
+  background: #c2b092;
+  text-decoration: line-through;
+}
+
+ul .done::before {
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+.hidden {
+  display: none;
+}
+
+.edit,
+.complete,
+.delete {
+  float: right;
+}
+
+button:hover {
+  color: white;
+}
+
+header {
+  background-color: #a1cae2;
+  padding: 30px 40px;
+  text-align: center;
+}
